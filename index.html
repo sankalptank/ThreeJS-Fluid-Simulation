@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  canvas {
+      padding: 0;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
+  </style>
+  <canvas id="canvas" height='100%' width='100%' style="position: center;"></canvas>  
+  <script>
+    const canvas = document.getElementById('canvas');
+    canvas.width = Math.min(window.innerWidth, window.innerHeight);
+    canvas.height = Math.min(window.innerWidth, window.innerHeight);
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+    <!-- Use a relative path for your script -->
+    <script src="script.js" type="module">
+      
+    </script>
+  </body>
+</html>
